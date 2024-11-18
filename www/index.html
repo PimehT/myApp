@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Portfolio</title>
+  <meta name="description" content="Portfolio of Pimeh Tare-ere who is a graduate of chemical engineering and is a front-end developer">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/query.css">
+</head>
+<body>
+<header>
+  <nav>
+    <h1><a href="#home" onclick="scrollToSection('')" id="logo">Tare</a></h1>
+    <ul id="desktop-nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div id="menu-btn" onclick="xMenu(this)">
+      <div class="line-1"></div>
+      <div class="line-2"></div>
+      <div class="line-3"></div>
+    </div>
+
+    <ul id="mobile-nav" class="hidden">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <div class="container">
+      <div class="profile-img">
+        <img
+            sizes="(max-width: 2550px) 40vw, 1020px"
+            srcset="
+            img/portfolio-square_hhkvxn_c_scale,w_200.png 200w,
+            img/portfolio-square_hhkvxn_c_scale,w_719.png 719w,
+            img/portfolio-square_hhkvxn_c_scale,w_1020.png 1020w"
+            src="img/portfolio-square_hhkvxn_c_scale,w_1020.png"
+            alt="picture of pimeh tar-ere">
+      </div>
+      <div class="intro-text">
+        <h1 class="header-text">Pimeh Tare-ere</h1>
+        <p class="sub-header-text">Chemical Engineer & Front-end Developer</p>
+        <a href="#contact" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">About Me</h2>
+      </div>
+      <div class="about-content">
+        <div class="collage-container">
+          <img
+              sizes="(max-width: 2485px) 40vw, 994px"
+              srcset="
+              img/photo1_ur7p6q_c_scale,w_200.jpg 200w,
+              img/photo1_ur7p6q_c_scale,w_588.jpg 588w,
+              img/photo1_ur7p6q_c_scale,w_994.jpg 994w"
+              src="img/photo1_ur7p6q_c_scale,w_994.jpg"
+              alt="Collage Image 1" class="collage-img img-1"
+          >
+
+          <img
+              sizes="(max-width: 2023px) 40vw, 809px"
+              srcset="
+              img/photo2_zzovsx_c_scale,w_200.jpg 200w,
+              img/photo2_zzovsx_c_scale,w_561.jpg 561w,
+              img/photo2_zzovsx_c_scale,w_809.jpg 809w"
+              src="img/photo2_zzovsx_c_scale,w_809.jpg"
+              alt="Collage Image 2" class="collage-img img-2"
+          >
+
+          <img
+              sizes="(max-width: 2700px) 40vw, 1080px"
+              srcset="
+              img/photo3_z1vl66_c_scale,w_200.jpg 200w,
+              img/photo3_z1vl66_c_scale,w_725.jpg 725w,
+              img/photo3_z1vl66_c_scale,w_1080.jpg 1080w"
+              src="img/photo3_z1vl66_c_scale,w_1080.jpg"
+              alt="Collage Image 3" class="collage-img img-3"
+          >
+
+          <img
+              sizes="(max-width: 2023px) 40vw, 809px"
+              srcset="
+              img/photo4_mtq7ww_c_scale,w_200.jpg 200w,
+              img/photo4_mtq7ww_c_scale,w_555.jpg 555w,
+              img/photo4_mtq7ww_c_scale,w_809.jpg 809w"
+              src="img/photo4_mtq7ww_c_scale,w_809.jpg"
+              alt="Collage Image 4" class="collage-img img-4"
+          >
+        </div>
+        <div class="section-content">
+          <p>
+            I am a graduate of chemical engineering and I am a front-end developer. I am passionate about creating beautiful and functional websites. With strong skills honed through ALX Software Engineering Program I am eager to leverage my knowledge to create impactful digital experiences. My commitment to continuous learning and collaborative nature has enabled me to adapt and overcome challenges. I am actively seeking opportunities that would allow me to expand my technical expertise while contributing to innovative tech solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">Skills</h2>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="skills-container">
+        <h3>Technical Skills</h3>
+        <div class="tech-skills-grid">
+          <div class="skill-item" data-level="Advanced">HTML</div>
+          <div class="skill-item" data-level="Advanced">CSS</div>
+          <div class="skill-item" data-level="Intermediate">Tailwind</div>
+          <div class="skill-item" data-level="Intermediate">MUI</div>
+          <div class="skill-item" data-level="Advanced">JavaScript</div>
+          <div class="skill-item" data-level="Advanced">React</div>
+          <div class="skill-item" data-level="Intermediate">Next.js</div>
+          <div class="skill-item" data-level="Intermediate">Python</div>
+          <div class="skill-item" data-level="Experienced">C</div>
+          <div class="skill-item" data-level="Basic">MySQL</div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills-list">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Problem Solving</li>
+          <li>Teamwork</li>
+          <li>Communication</li>
+          <li>Time Management</li>
+          <li>Adaptability</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Bachelor of Chemical Engineering</h3>
+            <p class="institution">University of Benin</p>
+            <p class="date">2016 - 2023</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>ALX Software Engineering Program</h3>
+            <p class="institution">ALX Africa</p>
+            <p class="date">2023 - 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Software Engineering (Bootcamp)</h3>
+            <p class="institution">ALX Africa</p>
+            <p class="date">2023 - 2024</p>
+            <p>
+              Completed an intensive foundation in software engineering (9 months) and front-end specialization (3 months), building complex web applications with React, JavaScript, and modern tooling.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Administrative Support Personnel (NYSC)</h3>
+            <p class="institution">College of Education, Warri</p>
+            <p class="date">2023 - 2024</p>
+            <p>
+              Streamlined student registration and managed high-volume data entry during peak periods, ensuring precision under tight deadlines and enhancing service efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>ToDo Web App</h3>
+          <p>A task management app with Firebase authentication.</p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>SCSS</span>
+            <span>Firebase</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/PimehT/Todo_app" target="_blank" class="btn-view">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Single Page Landing Page</h3>
+          <p>Responsive landing page with Next.js and Material UI.</p>
+          <div class="tech-stack">
+            <span>Next.js</span>
+            <span>Material UI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/PimehT/HR-Landing-Page" target="_blank" class="btn-view">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>Personal portfolio site showcasing projects and skills.</p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/PimehT/Portfolio-Site" target="_blank" class="btn-view">View Project</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Simple Shell</h3>
+          <p>Custom command-line shell in C with essential features.</p>
+          <div class="tech-stack">
+            <span>C</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/PimehT/simple_shell" target="_blank" class="btn-view">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="section-header">Contact</h2>
+      </div>
+      <div class="contact-content">
+        <p>Let's connect! Feel free to reach out to me via email or LinkedIn.</p>
+        <div class="contact-links">
+          <a href="mailto:tareerepimeh@gmail.com" class="contact-link">
+            <!-- Email SVG Icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon-email">
+              <path d="M20 4H4C2.9 4 2 4.9 2 6v12c0 1.1 0.9 2 2 2h16c1.1 0 2-0.9 2-2V6c0-1.1-0.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Email
+          </a>
+          <a href="https://www.linkedin.com/in/pimeh-tare-ere" class="contact-link">
+            <!-- LinkedIn SVG Icon -->
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon-linkedin">
+              <path d="M19 0h-14c-2.8 0-5 2.2-5 5v14c0 2.8 2.2 5 5 5h14c2.8 0 5-2.2 5-5v-14c0-2.8-2.2-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.3c-1 0-1.8-0.8-1.8-1.8s0.8-1.8 1.8-1.8 1.8 0.8 1.8 1.8-0.8 1.8-1.8 1.8zm13.5 11.3h-3v-5.6c0-1.3-0.5-2.2-1.7-2.2-0.9 0-1.4 0.6-1.6 1.2-0.1 0.2-0.1 0.5-0.1 0.8v5.8h-3v-10h3v1.4c0.4-0.6 1.1-1.4 2.7-1.4 2 0 3.5 1.3 3.5 4.1v5.9z"/>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2024 Pimeh Tare-ere. All rights reserved.</p>
+</footer>
+
+<script src="js/index.js" defer></script>
+</body>
+</html>
